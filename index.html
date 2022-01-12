@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Tanks</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+
+<body class="game-zone">
+
+    <!-- <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div> -->
+
+    <div class="panel">
+        <div class="info">
+            <span class="player-name">Имя игрока: <span class="inner-name">Вася</span></span>
+            <span class="points">Очки: <span class="inner-points">0</span></span>
+            <span class="level">Уровень сложности: <span class="level-inner">Hard</span></span>
+        </div>
+        <div class="life">
+
+        </div>
+    </div>
+
+    <div class="start-panel on">
+        <div class="start-panel-group">
+            <h2>TANKS</h2>
+            <p>Стрелять на А</p>
+            <p>Имя игрока:</p>
+            <input type="text" class="name-input">
+            <p>Выберите уровень:</p>
+            <ul class="levels">
+                <li class="levels__item" type="light"><a href="#">Light</a></li>
+                <li class="levels__item" type="medium"><a href="#">Medium</a></li>
+                <li class="levels__item" type="hard"><a href="#">Hardstyle</a></li>
+            </ul>
+            <button class="start-btn">Start</button>
+        </div>
+        <div class="blur"></div>
+    </div>
+
+    <div class="game-over">
+        <div class="game-over-info">
+            <span>Game Over</span>
+
+            <table class="results">
+
+            </table>
+            <div class="wrapper">
+                <a href="#" class="restart-btn" onclick="game()">Restart
+                    <svg>
+                        <rect></rect>
+                    </svg></a>
+            </div>
+        </div>
+        <div class="blur"></div>
+    </div>
+
+    <div id="preloader">
+        <img src="src/sprites/XVo6.gif" alt="preloader">
+    </div>
+
+    <script src="http://ajax.googleapis.com//ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/js/game.js"></script>
+</body>
+
+</html>
